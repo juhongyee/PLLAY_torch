@@ -1,0 +1,59 @@
+seed: 42
+device: cuda
+run_name: mnist_topo_pllay_001
+output_dir: runs/${run_name}
+data:
+  name: mnist
+  root: ./data
+  batch_size: 64
+  num_workers: 4
+  pin_memory: true
+  train_topo_path: ./data/processed/mnist_topo_train.pt
+  test_topo_path: ./data/processed/mnist_topo_test.pt
+  augmentation:
+    gaussian_noise_std: 0.0
+    normalize: true
+    corrupt_prob: 0.0
+    noise_prob: 0.0
+  image:
+    channels: 1
+    height: 28
+    width: 28
+model:
+  name: topo_mlp
+  num_classes: 10
+  image_backbone:
+    type: mlp
+    in_dim: 784
+    hidden_dims:
+    - 256
+    - 128
+    out_dim: 64
+    dropout: 0.1
+  topo:
+    extractor: gudhi_cubical
+    embedder: log
+    sample_range:
+    - 0.0
+    - 50.0
+    homology_dims:
+    - 1
+    diag_max_points: 100
+    dtm_m0: 0.01
+    dtm_r: 2.0
+    landscape_num_layers: 4
+    landscape_bins: 100
+    out_dim: 64
+  head:
+    hidden_dims:
+    - 64
+    dropout: 0.2
+train:
+  epochs: 10
+  lr: 0.001
+  weight_decay: 0.0001
+  amp: true
+  grad_clip_norm: 1.0
+  log_every: 10
+  eval_every: 1
+  save_every: 5

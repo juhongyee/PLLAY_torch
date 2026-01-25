@@ -1,0 +1,55 @@
+seed: 42
+device: cuda
+run_name: mnist_topo_baseline
+output_dir: runs/mnist_topo_baseline
+data:
+  name: mnist
+  root: ./data
+  batch_size: 64
+  num_workers: 2
+  pin_memory: true
+  image:
+    channels: 1
+    height: 28
+    width: 28
+  augmentation:
+    gaussian_noise_std: 0.0
+    normalize: true
+    corrupt_prob: 0.0
+    noise_prob: 0.0
+  train_topo_path: ./data/mnist_topo_train.pt
+  test_topo_path: ./data/mnist_topo_test.pt
+model:
+  name: topo_mlp
+  num_classes: 10
+  image_backbone:
+    type: mlp
+    in_dim: 784
+    hidden_dims:
+    - 256
+    - 128
+    out_dim: 128
+    dropout: 0.1
+  topo:
+    extractor: dummy
+    embedder: landscape
+    diag_max_points: 64
+    landscape_num_layers: 4
+    landscape_bins: 50
+    out_dim: 64
+  fusion:
+    type: concat
+    out_dim: 0
+  head:
+    hidden_dims:
+    - 64
+    dropout: 0.0
+train:
+  epochs: 2
+  lr: 0.001
+  weight_decay: 0.0001
+  amp: false
+  grad_clip_norm: 1.0
+  log_every: 10
+  eval_every: 1
+  save_every: 1

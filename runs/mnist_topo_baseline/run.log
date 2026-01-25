@@ -1,0 +1,39 @@
+2026-01-21 17:44:10 | INFO | pllay_torch | Initialized Experiment: mnist_topo_baseline
+2026-01-21 17:44:10 | INFO | pllay_torch | Device: cpu
+2026-01-21 17:44:10 | INFO | pllay_torch | Building dataloaders...
+2026-01-21 17:44:22 | INFO | pllay_torch | Building model...
+2026-01-21 17:44:22 | INFO | pllay_torch | >>> Start Training Loop
+2026-01-21 17:44:22 | INFO | pllay_torch | >>> Start Training
+2026-01-21 17:44:26 | INFO | pllay_torch | [Epoch 1] Train: loss=0.2962, acc=0.9066
+2026-01-21 17:44:27 | INFO | pllay_torch | [Epoch 1] Val  : loss=0.1447, acc=0.9557
+2026-01-21 17:44:27 | INFO | pllay_torch | New Best Accuracy: 0.9557 found!
+2026-01-21 17:44:30 | INFO | pllay_torch | [Epoch 2] Train: loss=0.1253, acc=0.9619
+2026-01-21 17:44:32 | INFO | pllay_torch | [Epoch 2] Val  : loss=0.0982, acc=0.9702
+2026-01-21 17:44:32 | INFO | pllay_torch | New Best Accuracy: 0.9702 found!
+2026-01-21 17:44:32 | INFO | pllay_torch | <<< Training Finished
+2026-01-21 17:45:20 | INFO | pllay_torch | Initialized Experiment: mnist_topo_baseline
+2026-01-21 17:45:20 | INFO | pllay_torch | Device: cpu
+2026-01-21 17:45:20 | INFO | pllay_torch | Building dataloaders...
+2026-01-21 17:45:20 | INFO | pllay_torch | Building model...
+2026-01-21 17:45:20 | INFO | pllay_torch | >>> Start Training Loop
+2026-01-21 17:45:20 | INFO | pllay_torch | >>> Start Training
+2026-01-21 17:45:24 | INFO | pllay_torch | [Epoch 1] Train: loss=0.2962, acc=0.9066
+2026-01-21 17:45:26 | INFO | pllay_torch | [Epoch 1] Val  : loss=0.1447, acc=0.9557
+2026-01-21 17:45:26 | INFO | pllay_torch | New Best Accuracy: 0.9557 found!
+2026-01-21 17:45:30 | INFO | pllay_torch | [Epoch 2] Train: loss=0.1253, acc=0.9619
+2026-01-21 17:45:31 | INFO | pllay_torch | [Epoch 2] Val  : loss=0.0982, acc=0.9702
+2026-01-21 17:45:31 | INFO | pllay_torch | New Best Accuracy: 0.9702 found!
+2026-01-21 17:45:31 | INFO | pllay_torch | <<< Training Finished
+2026-01-22 15:39:05 | INFO | pllay_torch | Initialized Experiment: mnist_topo_baseline
+2026-01-22 15:39:05 | INFO | pllay_torch | Device: cpu
+2026-01-22 15:39:05 | INFO | pllay_torch | Building dataloaders...
+2026-01-22 15:39:05 | INFO | pllay_torch | Building model...
+2026-01-22 15:39:05 | INFO | pllay_torch | >>> Start Training Loop
+2026-01-22 15:39:05 | INFO | pllay_torch | >>> Start Training
+2026-01-22 15:39:09 | INFO | pllay_torch | [Epoch 1] Train: loss=0.2962, acc=0.9066
+2026-01-22 15:39:10 | INFO | pllay_torch | [Epoch 1] Val  : loss=0.1447, acc=0.9557
+2026-01-22 15:39:10 | INFO | pllay_torch | New Best Accuracy: 0.9557 found!
+2026-01-22 15:39:14 | INFO | pllay_torch | [Epoch 2] Train: loss=0.1253, acc=0.9619
+2026-01-22 15:39:15 | INFO | pllay_torch | [Epoch 2] Val  : loss=0.0982, acc=0.9702
+2026-01-22 15:39:15 | INFO | pllay_torch | New Best Accuracy: 0.9702 found!
+2026-01-22 15:39:15 | INFO | pllay_torch | <<< Training Finished
